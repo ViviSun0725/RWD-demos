@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0421</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>LOGO</h1>
+        <label for="toggle-menu" class="toggle-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" id="toggle-menu" class="toggle-menu" />
+        <ul class="menu-area">
+          <li class="menu">
+            <span>menu</span>
+            <label for="toggle-submenu-1" class="toggle-submenu">
+              <i class="fa-solid fa-caret-down toggle-submenu-btn"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu"
+              id="toggle-submenu-1"
+              class="toggle-submenu-checkbox"
+            />
+            <ul class="submenu-area">
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <span>menu</span>
+            <label for="toggle-submenu-2" class="toggle-submenu">
+              <i class="fa-solid fa-caret-down toggle-submenu-btn"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu"
+              id="toggle-submenu-2"
+              class="toggle-submenu-checkbox"
+            />
+            <ul class="submenu-area">
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <span>menu</span>
+            <label for="toggle-submenu-3" class="toggle-submenu">
+              <i class="fa-solid fa-caret-down toggle-submenu-btn"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu"
+              id="toggle-submenu-3"
+              class="toggle-submenu-checkbox"
+            />
+            <ul class="submenu-area">
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+              <li class="submenu">subtitle</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="out-box">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+    </div>
+
+    <section>
+      <div class="aspect-img">
+        <!-- <img src="https://picsum.photos/300/300/?random=10" /> -->
+        <!-- <img src="https://picsum.photos/400/300/?random=11" /> -->
+        <img src="https://picsum.photos/1200/1800/?random=12" />
+      </div>
+    </section>
+
+    <section>
+      <div class="padding-img">
+        <!-- <img src="https://picsum.photos/300/200/?random=10"> -->
+      </div>
+    </section>
+    <script>
+      document
+        .querySelectorAll('input[type="radio"][name="submenu"]')
+        .forEach((radio) => {
+          radio.addEventListener("click", function (e) {
+            // 如果這顆 radio 已經是選取狀態，就取消選取
+            if (this.previousChecked) {
+              this.checked = false;
+            }
+
+            // 記住這顆 radio 是否剛剛是被選取的
+            this.previousChecked = this.checked;
+          });
+        });
+    </script>
+  </body>
+</html>

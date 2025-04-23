@@ -1,0 +1,110 @@
+section {
+    max-width: 1000px;
+
+    background-color: #aaa;
+    margin: 100px auto;
+}
+.out-box{
+    margin: 100px auto;
+    max-width: 1000px;
+    background-color: #faa;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    /* width: calc((100% - 20px) / 2); */
+    height: 300px;
+    flex: 1;
+}
+
+.box:first-of-type {
+    background-color: #faa;
+}
+
+.box:last-of-type {
+    background-color: #afa;
+}
+
+.box + .box {
+    /* margin-left: 20px; */
+}
+
+.aspect-img {
+    width: 50%;
+    aspect-ratio: 4 / 3;
+}
+
+.aspect-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.padding-img{
+    /* width: 100px; */
+    position: relative;
+    background-color: #fa0;
+    padding-bottom: 75%;
+}
+
+.padding-img img {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 平板大小        (max-width:1024px) 要注意順序與覆蓋*/
+@media screen and (min-width: 768px) {
+    .out-box {
+        font-size: 24px;
+        background-color: #afa;
+    }   
+
+    .box {
+        width: 100%;
+    }
+}
+
+/*電腦大小*/
+@media screen and (min-width: 1024px) {
+    .out-box {
+        display: block;
+        font-size: 30px;
+        background-color: #aaa;
+    }   
+
+    .box {
+        width: 100%;
+    }
+}
+
+/* 手機大小 螢幕寬小於等於 ， 可用max-width:*/
+/*                (max-width:768px)*/                  
+/* @media screen and (width <= 768px) {
+    .out-box {
+        display: block;
+        font-size: 30px;
+        background-color: #faa;
+    }   
+
+    .box {
+        width: 100%;
+    }
+} */
+
+
+
+
+
+
+
+/* min-width 最小寬度 >= */
+/* max-width 最大寬度 <= */
+/* width < 768px */
+/* width <= 768px */
