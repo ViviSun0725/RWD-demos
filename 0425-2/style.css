@@ -18,7 +18,10 @@ section {
     /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
     /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
     animation-timing-function: linear;
-    animation-iteration-count: 3;
+    animation-iteration-count: 1.5;
+    /* 1.5 -> 執行一次半
+       infinity
+       */
 }
 
 @keyframes boxxx {
