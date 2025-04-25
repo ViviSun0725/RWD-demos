@@ -14,19 +14,19 @@ section {
     height: 100px;
     background-color: #fa0;
     animation-name: boxxx;
-    animation-duration: 3s;
-    /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
-    /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
+    animation-duration: 5s;
+    animation-delay: -1s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    /* normal, reverse, alternate, alternate-reverse*/
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /*none, forward, backwards, both*/
 }
 
 @keyframes boxxx {
     0% {
         margin-left: 0;
-        background-color: rgb(206, 206, 102);
+        background-color: rgb(98, 240, 233);
     }
 
     /* 30% {
