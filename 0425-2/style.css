@@ -20,7 +20,8 @@ section {
     animation-iteration-count: 3;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    /*none, forward, backwards, both*/
+    animation-play-state: paused;
+    /* running, paused */
 }
 
 @keyframes boxxx {
