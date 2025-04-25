@@ -14,7 +14,9 @@ section {
     height: 100px;
     background-color: #fa0;
     animation-name: boxxx;
-    animation-duration: 10s;
+    animation-duration: 2s;
+    /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
 }
 
 @keyframes boxxx {
@@ -23,14 +25,14 @@ section {
         background-color: rgb(206, 206, 102);
     }
 
-    30% {
+    /* 30% {
        margin-left: 80%; 
        background-color: #5cce6f;
     }
 
     80% {
         background-color: #c76ce2;
-    }
+    } */
 
     100% {
         margin-left: 100%;
