@@ -1,0 +1,28 @@
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #aaa;
+}
+.container {
+    max-width: 100px;
+    margin: 100px auto;
+    background-color: #aaa;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fa0;
+    animation-name: boxxx;
+    animation-duration: 10s;
+}
+
+@keyframes boxxx {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
