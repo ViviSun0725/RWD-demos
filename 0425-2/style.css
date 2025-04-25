@@ -14,14 +14,13 @@ section {
     height: 100px;
     background-color: #fa0;
     animation-name: boxxx;
-    animation-duration: 6s;
+    animation-duration: 3s;
     /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
     /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
     animation-timing-function: linear;
-    animation-iteration-count: 1.5;
-    /* 1.5 -> 執行一次半
-       infinity
-       */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* normal, reverse, alternate, alternate-reverse*/
 }
 
 @keyframes boxxx {
