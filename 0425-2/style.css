@@ -18,11 +18,22 @@ section {
 }
 
 @keyframes boxxx {
-    from {
+    0% {
         margin-left: 0;
+        background-color: rgb(206, 206, 102);
     }
 
-    to {
+    30% {
+       margin-left: 80%; 
+       background-color: #5cce6f;
+    }
+
+    80% {
+        background-color: #c76ce2;
+    }
+
+    100% {
         margin-left: 100%;
+        background-color: #e45858;
     }
 }
