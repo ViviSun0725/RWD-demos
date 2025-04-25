@@ -16,7 +16,8 @@ section {
     animation-name: boxxx;
     animation-duration: 2s;
     /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
-    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
+    animation-timing-function: steps(5, end);
 }
 
 @keyframes boxxx {
