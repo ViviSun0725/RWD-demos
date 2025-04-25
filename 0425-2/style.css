@@ -14,17 +14,11 @@ section {
     height: 100px;
     background-color: #fa0;
     animation-name: boxxx;
-    animation-duration: 10s;
+    animation-duration: 6s;
     /* animation-timing-function: https://cubic-bezier.com/#.17,.67,.83,.67; */
     /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
     animation-timing-function: linear;
-    animation-delay: -3s; 
-    /* 
-    animation-delay: [時間]
-    [時間] > 0  --> 延遲[時間]
-    [時間] < 0  --> 從[時間]開始
-    
-    */
+    animation-iteration-count: 3;
 }
 
 @keyframes boxxx {
